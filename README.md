@@ -1,11 +1,11 @@
-# This is my package laravel-breaking-bad, a breaking bad api wrapper for laravel.
+# This is a laravel wrapper for Breaking Bad Api.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/njaaazi/laravel-breaking-bad.svg?style=flat-square)](https://packagist.org/packages/njaaazi/laravel-breaking-bad)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/njaaazi/laravel-breaking-bad/run-tests?label=tests)](https://github.com/njaaazi/laravel-breaking-bad/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/njaaazi/laravel-breaking-bad/Check%20&%20fix%20styling?label=code%20style)](https://github.com/njaaazi/laravel-breaking-bad/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/njaaazi/laravel-breaking-bad.svg?style=flat-square)](https://packagist.org/packages/njaaazi/laravel-breaking-bad)
 
-This is a laravel wrapper for Breaking Bad Api.
+This is my package laravel-breaking-bad, a breaking bad api wrapper for laravel.
 
 ## Installation
 
