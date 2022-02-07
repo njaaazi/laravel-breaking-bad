@@ -17,7 +17,7 @@ class Episodes extends AbstractApi
     public function series(string $series)
     {
         return $this->call('episodes', [
-            'series' => $series
+            'series' => $series,
         ]);
     }
 }

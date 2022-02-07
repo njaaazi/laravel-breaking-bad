@@ -4,7 +4,6 @@ namespace Njaaazi\BreakingBad\Api;
 
 class Deaths extends AbstractApi
 {
-
     public function all()
     {
         return $this->call('deaths');
@@ -13,7 +12,7 @@ class Deaths extends AbstractApi
     public function author(string $name)
     {
         return $this->call('death', [
-            'name' => $name
+            'name' => $name,
         ]);
     }
 
@@ -26,5 +25,4 @@ class Deaths extends AbstractApi
     {
         return $this->call('random-death');
     }
-
 }

@@ -4,7 +4,6 @@ namespace Njaaazi\BreakingBad\Api;
 
 class Quotes extends AbstractApi
 {
-
     public function all()
     {
         return $this->call('quotes');
@@ -18,7 +17,7 @@ class Quotes extends AbstractApi
     public function series(string $name)
     {
         return $this->call($this->endpoint, [
-            'series' => $name
+            'series' => $name,
         ]);
     }
 
@@ -30,14 +29,14 @@ class Quotes extends AbstractApi
     public function author(string $name)
     {
         return $this->call('quote', [
-            'author' => $name
+            'author' => $name,
         ]);
     }
 
     public function randomAuthor(string $author)
     {
         return $this->call('quote', [
-            'random' => $author
+            'random' => $author,
         ]);
     }
 }

@@ -2,10 +2,9 @@
 
 namespace Njaaazi\BreakingBad;
 
-use Njaaazi\BreakingBad\Factories\Client;
+use Njaaazi\BreakingBad\Commands\BreakingBadCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Njaaazi\BreakingBad\Commands\BreakingBadCommand;
 
 class BreakingBadServiceProvider extends PackageServiceProvider
 {

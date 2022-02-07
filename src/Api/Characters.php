@@ -4,7 +4,8 @@ namespace Njaaazi\BreakingBad\Api;
 
 class Characters extends AbstractApi
 {
-    public function all(){
+    public function all()
+    {
         return $this->call('characters');
     }
 
@@ -16,7 +17,7 @@ class Characters extends AbstractApi
     public function category(string $category)
     {
         return $this->call('characters', [
-            'category' => $category
+            'category' => $category,
         ]);
     }
 
@@ -28,7 +29,7 @@ class Characters extends AbstractApi
     public function name(string $name)
     {
         return $this->call('characters', [
-            'name' => $name
+            'name' => $name,
         ]);
     }
 }
