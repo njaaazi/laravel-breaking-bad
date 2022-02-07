@@ -9,8 +9,8 @@ use Njaaazi\BreakingBad\Api\Quotes;
 
 class BreakingBad
 {
-
-    public function characters(){
+    public function characters()
+    {
         return new Characters();
     }
 
