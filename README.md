@@ -15,13 +15,6 @@ You can install the package via composer:
 composer require njaaazi/laravel-breaking-bad
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-breaking-bad-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
@@ -32,21 +25,26 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'baseUrl'	=> env('BREAKINGBAD_BASE_URL') ? env('BREAKINGBAD_BASE_URL') : 'https://www.breakingbadapi.com/api/',
 ];
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-breaking-bad-views"
-```
 
 ## Usage
 
+### Using the application container
+
 ```php
-$breakingBad = new Njaaazi\BreakingBad();
-echo $breakingBad->echoPhrase('Hello, Njaaazi!');
+$breakingBad = new Njaaazi\BreakingBad\BreakingBad();
+$breakingBad->quotes()->random();
 ```
+
+### Using the facade
+
+```php
+BreakingBad::quotes()->random();
+```
+
 
 ## Testing
 
