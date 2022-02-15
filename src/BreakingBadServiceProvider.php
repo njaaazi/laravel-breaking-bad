@@ -18,7 +18,6 @@ class BreakingBadServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-breaking-bad')
             ->hasConfigFile()
-            ->hasViews()
             ->hasMigration('create_laravel-breaking-bad_table')
             ->hasCommand(BreakingBadCommand::class);
     }
